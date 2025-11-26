@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maxwell Ihiaso - CV</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact; 
+    }
+
+    /* Left Sidebar for Vertical Name */
+    .sidebar {
+        width: 120px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-end; /* Aligns text to bottom */
+        justify-content: center;
+        border-right: 2px solid #000;
+        padding-bottom: 50px;
+    }
+
+    .sidebar h1 {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        font-size: 80px;
+        margin: 0;
+        text-transform: uppercase;
+        color: #1a2f6b; /* Dark Blue */
+        line-height: 0.9;
+        white-space: nowrap;
+        font-weight: 900;
+        letter-spacing: 5px;
+        height: 100%;
+        text-align: right;
+        /* padding-top: 50px; */
+    }
+
+    /* Main Content Area */
+    .content {
+        flex: 1;
+        padding: 40px 40px;
+        max-width: 850px;
+    }
+
+    /* Header Section */
+    .header h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .contact-info div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Section Styling */
+    h3.section-title {
+        color: #a33b3b; /* Red/Maroon */
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    /* Summary Specifics */
+    .summary strong {
+        font-weight: 700;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skill-item {
+        margin-bottom: 10px;
+    }
+
+    .skill-name {
+        font-size: 13px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .progress-bar {
+        height: 6px;
+        background-color: #e0e0e0;
+        width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background-color: #8b1e1e; /* Deep Red */
+        flex-grow: 1;
+    }
+    
+    .progress-empty {
+        background-color: #ddd;
+        flex-grow: 1;
+    }
+
+    /* Work History */
+    .job {
+        margin-bottom: 25px;
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+    }
+
+    .job-title {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .job-date {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .job-company {
+        font-size: 13px;
+        margin-bottom: 10px;
+        font-style: italic; /* Optional based on preference */
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 18px;
+    }
+
+    li {
+        font-size: 13px;
+        margin-bottom: 5px;
+        line-height: 1.4;
+    }
+
+    .education-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    
+    .education-details strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>MAXWELL IHIASO</h1>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h2>Senior Software Engineer</h2>
+            <div class="contact-info">
+                <div>✉ ihiasomaxwellchukwuebuka@gmail.com</div>
+                <div>📍 Lagos, 100234 Nigeria</div>
+                <div>📞 +2348144069305</div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Professional Summary</h3>
+        <div class="summary">
+            <p>Highly skilled <strong>Senior Backend Engineer</strong> specializing in <strong>Golang and Node, distributed systems, microservices</strong>, and <strong>high-performance architectures</strong>.<br>
+            7+ years building scalable platforms across <strong>logistics, e-commerce, customer engagement, workflow automation, and SaaS systems</strong>.</p>
+            
+            <p>Experienced in designing:</p>
+            <ul>
+                <li>event-driven architectures</li>
+                <li>concurrency-safe Go services</li>
+                <li>high-throughput APIs</li>
+                <li>real-time messaging systems</li>
+                <li>microservices orchestration</li>
+                <li>high-volume data pipelines</li>
+                <li>distributed workflows across MongoDB, Redis, and cloud services</li>
+            </ul>
+            <p style="margin-top:10px;">Known for taking ambiguous business requirements and turning them into <strong>production-ready systems</strong> with clear architecture, reliability, and measurable impact.</p>
+        </div>
+
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-column">
+                <div class="skill-item">
+                    <span class="skill-name">Javascript, Typescript, Go, Python, Node</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">MongoDB, SQL Server, Redis, Google pub/sub</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Cypress, Playwright</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                </div>
+            </div>
+            <div class="skill-column">
+                <div class="skill-item">
+                    <span class="skill-name">React, Next, Express</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">AWS, GCP</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Work History</h3>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Software Engineer & Technical Lead</span>
+                <span class="job-date">Jul 2023 - Current</span>
+            </div>
+            <div class="job-company">Renda Africa | Lagos, Nigeria (Hybrid)</div>
+            <p style="font-size:12px; margin-bottom:5px;">Promoted across multiple roles:<br><strong>Senior Frontend Engineer > Frontend Lead > Engineering Lead > Technical Lead</strong></p>
+            <ul>
+                <li><strong>Architected and implemented a distributed Go-based notification system handling 500K+ events monthly</strong>, with retries, persistence, logging, and time-based delivery scheduling.</li>
+                <li><strong>Designed a high-performance fulfillment backend architecture</strong> powering inbound, outbound, inventory flows, picking/packing, rate cards, billing, delivery tracking, and merchant portals.</li>
+                <li>Built a <strong>real-time delivery tracking system</strong> integrating events, geolocation data, provider APIs, and Renda Delivery orchestration.</li>
+                <li>Built and maintained <strong>a reusable rate card engine</strong>, enabling dynamic pricing for different business units across fulfillment operations.</li>
+                <li>Led the development of <strong>Renda's Shopify connector</strong>, syncing products, inventory, sales orders, deliveries, and fulfillment workflows.</li>
+                <li>Designed a modern <strong>templating system (Next.js 15)</strong> powering Renda's landing pages and Admin UI.</li>
+                <li>Designed and built a customizable <strong>invoicing and receipts system</strong> with automatic sync to customer data, payments, and service workflows.</li>
+                <li>Drove technical decisions, system architecture docs, PRDs, and cross-team alignment for major platform features.</li>
+                <li>Mentored engineers, introduced coding standards, PR guidelines, architecture reviews, and CI/CD improvements.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Senior Fullstack Engineer</span>
+                <span class="job-date">Nov 2022 - Jun 2025</span>
+            </div>
+            <div class="job-company">Tidyex | Dallas, USA (Remote)</div>
+            <ul>
+                <li>Built integrations with Zoho (CRM, Books, Inventory) via Deluge for automation and operational workflows.</li>
+                <li>Created multiple front-facing experiences with Next.js and Tailwind for tracking, payments, customer dashboards, and marketing pages.</li>
+                <li>Improved system reliability and reduced operational overhead by automating reconciliation flows between bookings, payments, and cleaners.</li>
+                <li>Designed a modern <strong>templating system (Next.js 15 + Strapi + Payload CMS)</strong> powering Tidyex pages.</li>
+                <li>Built booking systems and automation using cypress.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technical Solutions Specialist</span>
+                <span class="job-date">Feb 2021 - Jun 2023</span>
+            </div>
+            <div class="job-company">Jobberman NG | Lagos, Nigeria</div>
+            <ul>
+                <li>Built internal tools and customer-facing UIs using React and Zoho Creator.</li>
+                <li>Automated recruitment and applicant-tracking workflows using Zoho Deluge.</li>
+                <li>Developed integrations for analytics, reporting, and hiring pipelines.</li>
+                <li>Implemented a new recruiting solution using technology, such as an applicant tracking system (ATS), that significantly improves recruitment efficiency, resulting in faster time-to-hire, reduced cost-per-hire, and increased candidate satisfaction.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Senior Frontend Engineer</span>
+                <span class="job-date">Aug 2022 - Nov 2022</span>
+            </div>
+            <div class="job-company">CyberMeStudio | Riyadh, Saudi Arabia (Remote)</div>
+            <ul>
+                <li>Led front-end modernization using React, TypeScript, and modular component-driven architecture.</li>
+                <li>Worked closely with designers to implement complex UI flows with pixel-perfect precision.</li>
+                <li>Improved performance and accessibility across client applications.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Software Engineer</span>
+                <span class="job-date">Feb 2019 - Feb 2021</span>
+            </div>
+            <div class="job-company">Upwork | Remote</div>
+            <ul>
+                <li>Delivered fullstack and backend solutions for clients across the US, UK, and Asia.</li>
+                <li>Specialized in React, Node.js, API development, automation scripts, and integrations.</li>
+            </ul>
+        </div>
+
+        <h3 class="section-title">Education</h3>
+        
+        <div class="education-item">
+            <div class="education-details">
+                <strong>Master of Science: Computer Science</strong>
+                <span>University of Lagos | Lagos</span>
+            </div>
+            <div class="education-date">Oct 2024</div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-details">
+                <strong>Bachelor of Science: Materials And Metallurgical Engineering</strong>
+                <span>Federal University of Technology, Owerri | Imo</span>
+            </div>
+            <div class="education-date">Dec 2017</div>
+        </div>
+
+    </div>
+</body>
+</html>
