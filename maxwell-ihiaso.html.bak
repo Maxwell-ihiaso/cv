@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Senior Software Engineer, Technical Lead, Go, Golang, TypeScript, Python, Node.js, React, Next.js, distributed systems, microservices, cloud-native, high-performance APIs, backend engineering, full-stack engineering, logistics, SaaS">
+<title>Maxwell Ihiaso | Senior Software Engineer</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+    :root {
+        --bg: #f4f1ea;
+        --paper: #fffdf9;
+        --panel: #f8f4ec;
+        --text: #1d1c19;
+        --muted: #5d584f;
+        --line: #d8d0c3;
+        --strong: #0f4c5c;
+        --accent: #b85c38;
+        --tag: #efe5d7;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Manrope', sans-serif;
+        color: var(--text);
+        background:
+            radial-gradient(circle at top left, rgba(184, 92, 56, 0.12), transparent 28%),
+            radial-gradient(circle at top right, rgba(15, 76, 92, 0.12), transparent 24%),
+            linear-gradient(180deg, #f5f1e8 0%, #efe7da 100%);
+        padding: 36px 20px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .page {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--paper);
+        border: 1px solid rgba(29, 28, 25, 0.08);
+        box-shadow: 0 18px 50px rgba(29, 28, 25, 0.08);
+        overflow: hidden;
+    }
+
+    .hero {
+        padding: 38px 40px 28px;
+        background:
+            linear-gradient(135deg, rgba(15, 76, 92, 0.98), rgba(18, 53, 67, 0.96)),
+            linear-gradient(135deg, #0f4c5c, #163b46);
+        color: #fffdf9;
+    }
+
+    .hero-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 18px;
+    }
+
+    .name {
+        margin: 0;
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        font-weight: 800;
+    }
+
+    .headline {
+        margin: 10px 0 0;
+        max-width: 700px;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(255, 253, 249, 0.9);
+    }
+
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        border: 1px solid rgba(255, 253, 249, 0.35);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 253, 249, 0.92);
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+        color: rgba(255, 253, 249, 0.92);
+        overflow-wrap: anywhere;
+    }
+
+    .contact-item a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.95fr);
+        gap: 0;
+    }
+
+    .primary {
+        padding: 30px 34px 36px 40px;
+    }
+
+    .secondary {
+        padding: 30px 32px 36px;
+        background: var(--panel);
+        border-left: 1px solid var(--line);
+    }
+
+    .section {
+        margin-bottom: 28px;
+    }
+
+    .section:last-child {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        margin: 0 0 14px;
+        color: var(--strong);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    .summary {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.75;
+        color: var(--text);
+    }
+
+    .highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: var(--tag);
+        color: var(--text);
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .role {
+        position: relative;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .role:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .role-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 8px;
+    }
+
+    .role-title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 800;
+        color: var(--text);
+    }
+
+    .role-company {
+        margin: 4px 0 0;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 600;
+    }
+
+    .role-date {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+        text-align: right;
+        padding-top: 3px;
+    }
+
+    .role-note {
+        margin: 10px 0 12px;
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 18px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--text);
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+
+    .subsection {
+        margin-bottom: 22px;
+    }
+
+    .subsection:last-child {
+        margin-bottom: 0;
+    }
+
+    .subsection h3 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: var(--text);
+        font-weight: 800;
+    }
+
+    .stack-list,
+    .meta-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .stack-item {
+        display: inline-flex;
+        padding: 7px 10px;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid var(--line);
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--text);
+    }
+
+    .meta-item {
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(93, 88, 79, 0.18);
+    }
+
+    .meta-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .meta-label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 11px;
+        font-weight: 800;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
+
+    .meta-value {
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--text);
+    }
+
+    .education-item {
+        margin-bottom: 16px;
+    }
+
+    .education-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .education-degree {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--text);
+    }
+
+    .education-school,
+    .education-date {
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+        body {
+            padding: 0;
+            background: var(--paper);
+        }
+
+        .page {
+            border: 0;
+            box-shadow: none;
+        }
+
+        .hero,
+        .primary,
+        .secondary {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        .hero-top,
+        .role-header {
+            flex-direction: column;
+        }
+
+        .contact-grid,
+        .main {
+            grid-template-columns: 1fr;
+        }
+
+        .secondary {
+            border-left: 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .role-date {
+            text-align: left;
+        }
+    }
+
+    @media print {
+        body {
+            padding: 0;
+            background: #fff;
+        }
+
+        .page {
+            max-width: none;
+            border: 0;
+            box-shadow: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+</style>
+</head>
+<body>
+    <main class="page">
+        <header class="hero">
+            <div class="hero-top">
+                <div>
+                    <h1 class="name">Maxwell Ihiaso</h1>
+                    <p class="headline">
+                        Senior Software Engineer and Technical Lead building cloud-native products, distributed systems,
+                        and high-performance APIs with Go, TypeScript, React, Next.js, and Python.
+                    </p>
+                </div>
+                <div class="badge">Open to Remote</div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-item">Email: <a href="mailto:ihiasomaxwellchukwuebuka@gmail.com">ihiasomaxwellchukwuebuka@gmail.com</a></div>
+                <div class="contact-item">Location: Lagos, Nigeria</div>
+                <div class="contact-item">Phone: <a href="tel:+2348144069305">+234 814 406 9305</a></div>
+                <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/maxwell-ihiaso">linkedin.com/in/maxwell-ihiaso</a></div>
+                <div class="contact-item">GitHub: <a href="https://github.com/maxwellihiaso">github.com/maxwellihiaso</a></div>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="primary">
+                <section class="section">
+                    <h2 class="section-title">Professional Profile</h2>
+                    <p class="summary">
+                        Senior Software Engineer with 7+ years of experience designing and delivering production systems across logistics,
+                        SaaS, recruitment technology, and customer operations. Strong background in backend engineering, distributed systems,
+                        API design, cloud-native delivery, and full-stack product execution. Known for translating ambiguous business needs
+                        into maintainable systems, leading cross-functional delivery, and mentoring engineers through architecture reviews,
+                        coding standards, and pragmatic execution.
+                    </p>
+                    <div class="highlights">
+                        <span class="tag">Go / Golang</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Distributed Systems</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">High-Performance APIs</span>
+                        <span class="tag">Cloud-Native Delivery</span>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Experience</h2>
+
+                    <article class="role">
+                        <div class="role-header">
+                            <div>
+                                <h3 class="role-title">Software Engineer and Technical Lead</h3>
+                                <p class="role-company">Renda Africa | Lagos, Nigeria (Hybrid)</p>
+                            </div>
+                            <div class="role-date">Jul 2023 - Present</div>
+                        </div>
+                        <p class="role-note">Progressed through senior engineering and leadership roles across frontend, platform delivery, and technical leadership.</p>
+                        <ul>
+                            <li>Lead architecture and implementation for logistics workflows spanning delivery tracking, invoicing, inventory-adjacent operations, merchant tooling, and admin experiences.</li>
+                            <li>Built backend and platform capabilities in Go and TypeScript, including reusable services, operational APIs, internal tools, and business workflow automation.</li>
+                            <li>Delivered a real-time delivery tracking system integrating event streams, geolocation inputs, provider APIs, and fulfillment orchestration.</li>
+                            <li>Built and maintained a reusable rate card engine used to support dynamic pricing across multiple business units and fulfillment scenarios.</li>
+                            <li>Led development of a Shopify connector that syncs products, inventory, orders, and fulfillment data into Renda operational workflows.</li>
+                            <li>Drove technical direction through architecture documentation, product requirement alignment, engineering reviews, CI/CD improvements, and mentorship across teams.</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-header">
+                            <div>
+                                <h3 class="role-title">Senior Full-Stack Engineer</h3>
+                                <p class="role-company">Tidyex | Dallas, USA (Remote)</p>
+                            </div>
+                            <div class="role-date">Nov 2022 - Jun 2025</div>
+                        </div>
+                        <ul>
+                            <li>Built customer-facing and internal product experiences with Next.js, Tailwind CSS, Strapi, and Payload CMS for bookings, payments, dashboards, and operational workflows.</li>
+                            <li>Integrated Zoho CRM, Books, and Inventory systems using Deluge and custom backend logic to automate finance and customer operations.</li>
+                            <li>Improved reliability by streamlining reconciliation flows between bookings, payments, and service fulfillment processes.</li>
+                            <li>Designed modular page and content systems that enabled faster iteration across marketing and operations surfaces.</li>
+                            <li>Implemented automation and end-to-end testing workflows using Cypress to improve release confidence.</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-header">
+                            <div>
+                                <h3 class="role-title">Technical Solutions Specialist</h3>
+                                <p class="role-company">Jobberman Nigeria | Lagos, Nigeria</p>
+                            </div>
+                            <div class="role-date">Feb 2021 - Jun 2023</div>
+                        </div>
+                        <ul>
+                            <li>Built internal tools and customer-facing interfaces with React and Zoho Creator to support recruitment operations and employer workflows.</li>
+                            <li>Automated applicant tracking, reporting, and hiring workflows using Zoho Deluge and platform integrations.</li>
+                            <li>Delivered analytics and reporting solutions that improved visibility into hiring pipelines and operational performance.</li>
+                            <li>Supported implementation of recruitment technology solutions that improved efficiency, reduced manual effort, and strengthened employer adoption.</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-header">
+                            <div>
+                                <h3 class="role-title">Senior Frontend Engineer</h3>
+                                <p class="role-company">CyberME Studio | Riyadh, Saudi Arabia (Remote Contract)</p>
+                            </div>
+                            <div class="role-date">Aug 2022 - Nov 2022</div>
+                        </div>
+                        <ul>
+                            <li>Led frontend modernization using React and TypeScript with a more modular, component-driven architecture.</li>
+                            <li>Partnered closely with design stakeholders to implement polished, production-ready user flows and reusable UI patterns.</li>
+                            <li>Improved application performance and accessibility across client experiences.</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-header">
+                            <div>
+                                <h3 class="role-title">Software Engineer</h3>
+                                <p class="role-company">Upwork | Remote</p>
+                            </div>
+                            <div class="role-date">Feb 2019 - Feb 2022</div>
+                        </div>
+                        <ul>
+                            <li>Delivered full-stack and backend solutions for international clients across healthcare, e-commerce, and business operations use cases.</li>
+                            <li>Built web applications, APIs, automation scripts, and third-party integrations using JavaScript, TypeScript, React, and Node.js.</li>
+                            <li>Worked directly with clients to scope requirements, ship features quickly, and maintain production systems.</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+
+            <aside class="secondary">
+                <section class="section">
+                    <h2 class="section-title">Core Skills</h2>
+
+                    <div class="subsection">
+                        <h3>Languages</h3>
+                        <div class="stack-list">
+                            <span class="stack-item">Go</span>
+                            <span class="stack-item">TypeScript</span>
+                            <span class="stack-item">JavaScript</span>
+                            <span class="stack-item">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Backend and APIs</h3>
+                        <div class="stack-list">
+                            <span class="stack-item">Node.js</span>
+                            <span class="stack-item">Express.js</span>
+                            <span class="stack-item">REST APIs</span>
+                            <span class="stack-item">Microservices</span>
+                            <span class="stack-item">Distributed Systems</span>
+                            <span class="stack-item">Event-Driven Workflows</span>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Frontend</h3>
+                        <div class="stack-list">
+                            <span class="stack-item">React</span>
+                            <span class="stack-item">Next.js</span>
+                            <span class="stack-item">Tailwind CSS</span>
+                            <span class="stack-item">Material UI</span>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Data and Infrastructure</h3>
+                        <div class="stack-list">
+                            <span class="stack-item">PostgreSQL</span>
+                            <span class="stack-item">MongoDB</span>
+                            <span class="stack-item">Redis</span>
+                            <span class="stack-item">Docker</span>
+                            <span class="stack-item">GCP</span>
+                            <span class="stack-item">AWS</span>
+                            <span class="stack-item">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Testing and Automation</h3>
+                        <div class="stack-list">
+                            <span class="stack-item">Playwright</span>
+                            <span class="stack-item">Cypress</span>
+                            <span class="stack-item">Workflow Automation</span>
+                            <span class="stack-item">Platform Integrations</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Career Focus</h2>
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <span class="meta-label">Target Roles</span>
+                            <div class="meta-value">Senior Software Engineer, Senior Backend Engineer, Technical Lead, Full-Stack Engineer</div>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Industry Fit</span>
+                            <div class="meta-value">Logistics, SaaS, fintech-adjacent operations, enterprise software, platform engineering</div>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Strengths</span>
+                            <div class="meta-value">System design, product delivery, cross-functional collaboration, mentoring, architecture reviews</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <p class="education-degree">M.Sc. Computer Science</p>
+                        <div class="education-school">University of Lagos, Lagos</div>
+                        <div class="education-date">Oct 2024</div>
+                    </div>
+                    <div class="education-item">
+                        <p class="education-degree">B.Eng. Materials and Metallurgical Engineering</p>
+                        <div class="education-school">Federal University of Technology, Owerri</div>
+                        <div class="education-date">Dec 2017</div>
+                    </div>
+                </section>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
